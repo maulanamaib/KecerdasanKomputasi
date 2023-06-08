@@ -88,7 +88,7 @@ with NaiveBayes:
 with DecisionTree:
     training, test, training_label, test_label = train_test_split(scaled_features, y, test_size=0.2, random_state=100)
 
-    st.dubheader("DecisionTree")
+    st.subheader("DecisionTree")
     model2 = tree.DecisionTreeClassifier()
     model1.fit(training, training_label)
     
