@@ -97,8 +97,8 @@ with DecisionTree:
 
     st.write("Akurasi Model: ", accuracy2)
     
-    g = tree.plot_tree(clf)
-    st.graphviz_chart(g)
+#     g = tree.plot_tree(clf)
+    st.graphviz_chart(clf)
     plt.figure(figsize=(8, 6))
     plt.bar(['Akurasi'], [accuracy2])
     plt.ylim([0, 1])
