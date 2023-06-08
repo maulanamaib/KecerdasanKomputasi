@@ -89,8 +89,8 @@ with DecisionTree:
     training, test, training_label, test_label = train_test_split(scaled_features, y, test_size=0.2, random_state=100)
 
     st.subheader("DecisionTree")
-    model2 = tree.DecisionTreeClassifier()
-    model1.fit(training, training_label)
+    model2 = DecisionTreeClassifier()
+    model2.fit(training, training_label)
     
     y_pred2 = model2.predict(test)
     accuracy2 = accuracy_score(test_label, y_pred2)
