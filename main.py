@@ -90,14 +90,14 @@ with DecisionTree:
 
     st.subheader("DecisionTree")
     model2 = tree.DecisionTreeClassifier()
-    clf = model2.fit(training1, training_label1)
+    model2.fit(training1, training_label1)
     
     y_pred2 = model2.predict(test1)
     accuracy2 = accuracy_score(test_label1, y_pred2)
 
     st.write("Akurasi Model: ", accuracy2)
     
-    tree.plot_tree(clf)
+#     tree.plot_tree(clf)
 
     plt.figure(figsize=(8, 6))
     plt.bar(['Akurasi'], [accuracy2])
