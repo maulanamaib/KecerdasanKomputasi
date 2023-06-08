@@ -92,7 +92,7 @@ with DecisionTree:
     model2 = tree.DecisionTreeClassifier()
     model2.fit(training1, training_label1)
     
-    y_pred2 = model2.predict(test11)
+    y_pred2 = model2.predict(test1)
     accuracy2 = accuracy_score(test_label1, y_pred2)
 
     st.write("Akurasi Model: ", accuracy2)
