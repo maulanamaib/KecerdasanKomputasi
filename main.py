@@ -86,14 +86,14 @@ with NaiveBayes:
     st.pyplot(plt)
 
 with DecisionTree:
-    training, test, training_label, test_label = train_test_split(scaled_features, y, test_size=0.2, random_state=100)
+    training1, test1, training_label1, test_label1 = train_test_split(scaled_features, y, test_size=0.2, random_state=100)
 
     st.subheader("DecisionTree")
-    model2 = DecisionTreeClassifier()
-    model2.fit(training, training_label)
+    model2 = tree.DecisionTreeClassifier()
+    model2.fit(training1, training_label1)
     
-    y_pred2 = model2.predict(test)
-    accuracy2 = accuracy_score(test_label, y_pred2)
+    y_pred2 = model2.predict(test11)
+    accuracy2 = accuracy_score(test_label1, y_pred2)
 
     st.write("Akurasi Model: ", accuracy2)
     
